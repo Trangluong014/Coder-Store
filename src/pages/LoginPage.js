@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../components/logo";
+import Logo from "../components/Logo";
+import { useForm } from "react-hook-form";
 
 function LoginPage() {
   return (
