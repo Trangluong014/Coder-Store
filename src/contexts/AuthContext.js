@@ -4,7 +4,7 @@ const innitialState = {
   isAuthenticated: false,
   user: null,
 };
-const AuthContext = createContext(innitialState);
+const AuthContext = createContext({ ...innitialState });
 
 const LOGIN_SUCESS = "LOGIN_SUCESS";
 const LOGOUT = "LOGOUT";
@@ -39,4 +39,4 @@ function AuthProvider({ children }) {
   );
 }
 
-export default AuthProvider;
+export { AuthContext, AuthProvider };
